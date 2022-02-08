@@ -23,7 +23,7 @@ app.use('/admin/library', libraryapi);
 app.use('/admin/book', bookapi);
 
 
-app.listen({ port: process.env.PORT || 8500 }, async () => {
+app.listen({ port: 8500 }, async () => {
     await sequelize.authenticate();
     console.log("povezan app za restapi");
 });
